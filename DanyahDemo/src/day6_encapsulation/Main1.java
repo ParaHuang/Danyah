@@ -1,7 +1,19 @@
 package day6_encapsulation;
 
 public class Main1 {
+    public void fun1(){
+        System.out.println("hello world");
+    }
+
+    public static void fun2(){
+        System.out.println("hello world");
+    }
+
     public static void main(String[] args) {
+        Main1 m = new Main1();
+        m.fun1();
+
+        fun2();
         /*
         Date d1 = new Date();
         Date d2 = new Date(2020);
@@ -18,6 +30,14 @@ public class Main1 {
 
         Student s1 = new Student(1001,"Jack","Huang");
         Student s2 = new Student(1002,"Tom","Huang");
+        System.out.println(s1);
+        System.out.println(s2);
+
+        //teacherName is static, it doesn't belong any object
+//        s1.teacherName = "Lily";
+        //access static variable by ClassName.staticVariable
+        Student.teacherName = "Lily";
+
         System.out.println(s1);
         System.out.println(s2);
 //
