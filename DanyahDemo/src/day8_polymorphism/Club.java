@@ -6,7 +6,7 @@ public class Club {
         System.out.println();
         System.out.println("party start");
         //human come to party to eat
-        h.eat();    //polymorphism.because every subclass override eat
+        h.eat();    //polymorphism(=reference type change + override).because every subclass override eat
         System.out.println("party is over, go home");
         //sleep
         h.sleep();  //no polymorphism.
