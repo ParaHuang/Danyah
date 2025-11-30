@@ -35,7 +35,10 @@ public class Main4 {
 //        System.out.println(removedValue);
 
         //4.set
-        list.set(0,"HELLO");
+//        list.set(0,"HELLO");
         System.out.println(list);
+
+        //5.contains
+        System.out.println(list.contains("hello"));
     }
 }
